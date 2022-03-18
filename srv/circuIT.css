@@ -1,0 +1,14 @@
+#gameboard {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    user-select: none;
+}
+
+td {
+    border: 1px solid gray;
+}
+
+.wire{
+    background: red;
+}
