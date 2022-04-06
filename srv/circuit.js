@@ -1,4 +1,4 @@
-const codes = ["empty", "wire", "resistor", "vsource", "csource", "capacitor", "button"];
+const codes = ["empty", "wire", "resistor", "vsource", "csource", "capacitor", "button", "led"];
 class Circuit{
 
     constructor() {
