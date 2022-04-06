@@ -12,3 +12,23 @@ td {
 .wire{
     background: red;
 }
+
+.resistor{
+    background: gray;
+}
+
+.vsource{
+    background: green;
+}
+
+.csource{
+    background: blue;
+}
+
+.capacitor{
+    background: purple;
+}
+
+.button{
+    background: orange;
+}

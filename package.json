@@ -2,7 +2,8 @@
   "name": "circuit",
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "shrink-string": "^3.0.9"
   },
   "scripts": {
     "start": "node main.js"
