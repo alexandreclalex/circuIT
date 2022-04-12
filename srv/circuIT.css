@@ -5,34 +5,45 @@
     user-select: none;
 }
 
-td {
-    border: 1px solid gray;
+td{
+    border: 1px solid black;
+}
+
+#gameboard {
+    color: white;
 }
 
 .wire{
     background: red;
+    color: red;
 }
 
 .resistor{
     background: gray;
+    color: grey;
 }
 
 .vsource{
     background: green;
+    color: green;
 }
 
 .csource{
     background: blue;
+    color: blue;
 }
 
 .capacitor{
     background: purple;
+    color: purple;
 }
 
 .button{
     background: orange;
+    color: orange;
 }
 
 .led{
     background: cyan;
+    color: cyan;
 }

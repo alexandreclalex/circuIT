@@ -2,7 +2,9 @@
   "name": "circuit",
   "version": "1.0.0",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
+    "pug": "^3.0.2",
     "shrink-string": "^3.0.9"
   },
   "scripts": {
