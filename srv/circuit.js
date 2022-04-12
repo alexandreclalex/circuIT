@@ -16,6 +16,9 @@ class Circuit{
             $('#export').get(0).onclick = function () {
                 encodeBoard();
             }
+            $('#import').get(0).onclick = function () {
+                decodeBoard($("#export_out").val());
+            }
             initializeTable(20, 20)
         }
 
@@ -28,6 +31,17 @@ class Circuit{
                 }
             }
             $("#export_out").val(str);
+        }
+
+        const decodeBoard = (str) => {
+            for (let i = 0; i < board.length; i++) {
+                for (let j = 0; j < board.length; j++) {
+                    board[i][j] = str.charAt(i*board.length + j)
+                    let query = `#${i}x${j}`;
+                    $(query).get(0).classList = [];
+                    $(query).get(0).classList.add(codes[board[i][j]]);
+                }
+            }
         }
 
         let getCurrClass = () => {
@@ -58,6 +72,7 @@ class Circuit{
                 for (let j = 0; j < width; j++) {
                     arr.push(0)
                     let cell = row.insertCell();
+                    cell.id = `${i}x${j}`
                     cell.innerText = ` `;
                     cell.onmouseover = function () {
                         if (mouseDown) {

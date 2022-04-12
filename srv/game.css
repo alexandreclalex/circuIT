@@ -1,0 +1,14 @@
+#game{
+    display: flex;
+}
+
+#gameboard{
+    width: 50%;
+    height: 50%;
+}
+#instructions{
+    margin: 15px;
+}
+#key{
+    margin: 15px;
+}
